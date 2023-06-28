@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <article class="hero__container">
+    <section class="hero-section-one">
+        <h1>Learn to code by watching others</h1>
+
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+      but understanding how developers think is invaluable.</p> 
+    </section>
+
+    <section class="hero-section-two">
+
+      <div class="hero-span-container">
+        <span>Try it free 7 days</span> then $20/mo. thereafter
+      </div>
+
+      <div class="hero-input-container">
+        <input type="text" name="firstName" id="first-name" placeholder="First Name">
+          <img class="hero-error visible" src="icon-error.svg" alt="error-icon">
+          <div class="hero-error-p visible"><p>First name cannot be empty</p></div>
+        <input type="text" name="lastName" id="last-name" placeholder="Last Name">
+          <img class="hero-error visible" src="icon-error.svg" alt="error-icon">
+          <div class="hero-error-p visible"><p>Last name cannot be empty</p></div>
+        <input type="email" name="email" id="email" placeholder="E mail Address">
+          <img class="hero-error visible" src="icon-error.svg" alt="error-icon">
+          <div class="hero-error-p visible"><p>Looks like this is not an Email</p></div>
+        <input type="password" name="password" id="password" placeholder="Password">
+          <img class="hero-error visible" src="icon-error.svg" alt="error-icon">
+          <div class="hero-error-p visible"><p>Password cannot be empty</p></div>
+      </div>
+
+      <button class="hero-btn">Claim your free trial</button>
+
+      <div class="hero-disclaimer">
+        <p>By clicking the button, you are agreeing to our Terms and Services</p>
+      </div>
+    </section>
+  </article>
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Cortele</a>.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
